@@ -22,7 +22,10 @@
           {% for x in employees %}
           <tr>
           <td><a href="{% url 'employee_detail' x.id %}">{{x.first_name}} {{x.last_name}}</td>
-          <td>{{x.designation}}</td>
+          <td>{{x.designation
+            
+            
+          </td>
           <td>{{x.phone_number}}</td>
           {% endfor %}
         </tr>
